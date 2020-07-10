@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap"
+      rel="stylesheet"
+    />
+    <title>Free URL Shortener</title>
+  </head>
+  <body>
+    <!-- <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.min.js"></script> -->
+
+    <div ng-app>
+      <div ng-controller="contactsCtrl">
+        <section class="header">
+          <center><h1>Free URL Un-Shortener</h1></center>
+          <div action="" class="cont">
+            <input
+              type="text"
+              id="search"
+              class="srchFld"
+              placeholder=""
+              ng-model="search"
+              value=""
+            />
+            <button type="submit" id="shorten-btn" class="srchBtn">
+              Shorten
+            </button>
+          </div>
+        </section>
+      </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <section class="shortened-links-list" id="list"></section>
+
+    <!-- <script src="script.js"></script> -->
+    <!-- <script src="urlShortener.js"></script> -->
+    <script src="master.js"></script>
+    <!-- <script src="test.js"></script> -->
+  </body>
+</html>
